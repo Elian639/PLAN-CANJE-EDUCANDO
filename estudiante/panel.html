@@ -1,0 +1,500 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Mi Portal | Plan Canje Educativo</title>
+
+    <!-- CSS PRINCIPAL -->
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body class="pagina-panel">
+
+
+    <!-- =========================
+         ENCABEZADO
+    ========================== -->
+
+    <header class="header">
+
+        <div class="contenedor nav">
+
+            <a
+                href="../index.html"
+                class="logo"
+            >
+
+                <span>🎓</span>
+
+                <div>
+
+                    <strong>
+                        EDUCANDO CONCIENCIA
+                    </strong>
+
+                    <small>
+                        Plan Canje Educativo
+                    </small>
+
+                </div>
+
+            </a>
+
+
+            <button
+                type="button"
+                id="cerrarSesion"
+                class="btn-cerrar"
+            >
+                🚪 Cerrar sesión
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         CONTENIDO PRINCIPAL
+    ========================== -->
+
+    <main class="panel-main">
+
+        <div class="contenedor">
+
+
+            <!-- =========================
+                 BIENVENIDA
+            ========================== -->
+
+            <section class="panel-bienvenida">
+
+                <div>
+
+                    <span class="etiqueta">
+                        🎓 MI PORTAL
+                    </span>
+
+                    <h1>
+                        Hola,
+                        <span id="nombreEstudiante">
+                            Estudiante
+                        </span>
+                        👋
+                    </h1>
+
+                    <p>
+                        Bienvenido a tu espacio personal
+                        del Plan Canje Educativo.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================
+                 TARJETAS DE ESTADISTICAS
+            ========================== -->
+
+            <section class="panel-estadisticas">
+
+
+                <div class="estadistica-card">
+
+                    <span class="estadistica-icono">
+                        ⭐
+                    </span>
+
+                    <div>
+
+                        <small>
+                            MIS PUNTOS
+                        </small>
+
+                        <strong id="puntosEstudiante">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="estadistica-card">
+
+                    <span class="estadistica-icono">
+                        📋
+                    </span>
+
+                    <div>
+
+                        <small>
+                            RECOMENDACIONES
+                        </small>
+
+                        <strong id="cantidadRecomendaciones">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="estadistica-card">
+
+                    <span class="estadistica-icono">
+                        🎁
+                    </span>
+
+                    <div>
+
+                        <small>
+                            PREMIO
+                        </small>
+
+                        <strong>
+                            En participación
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =========================
+                 GRID PRINCIPAL
+            ========================== -->
+
+            <div class="panel-grid">
+
+
+                <!-- =========================
+                     DATOS PERSONALES
+                ========================== -->
+
+                <section class="panel-card">
+
+                    <div class="panel-card-header">
+
+                        <div>
+
+                            <span class="panel-card-icon">
+                                👤
+                            </span>
+
+                            <h2>
+                                Mis datos
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="datos-estudiante">
+
+
+                        <div class="dato">
+
+                            <span>
+                                Nombre completo
+                            </span>
+
+                            <strong id="datoNombre">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="dato">
+
+                            <span>
+                                Correo electrónico
+                            </span>
+
+                            <strong id="datoEmail">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="dato">
+
+                            <span>
+                                Teléfono
+                            </span>
+
+                            <strong id="datoTelefono">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="dato">
+
+                            <span>
+                                Escuela
+                            </span>
+
+                            <strong id="datoEscuela">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="dato">
+
+                            <span>
+                                Curso
+                            </span>
+
+                            <strong id="datoCurso">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                        <div class="dato">
+
+                            <span>
+                                División
+                            </span>
+
+                            <strong id="datoDivision">
+                                -
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- =========================
+                     RECOMENDACIONES
+                ========================== -->
+
+                <section class="panel-card">
+
+                    <div class="panel-card-header">
+
+                        <div>
+
+                            <span class="panel-card-icon">
+                                📋
+                            </span>
+
+                            <h2>
+                                Mis recomendaciones
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="listaRecomendaciones"
+                        class="lista-recomendaciones"
+                    >
+
+                        <div class="sin-recomendaciones">
+
+                            <span>
+                                📋
+                            </span>
+
+                            <p>
+                                Todavía no tenés
+                                recomendaciones registradas.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        id="btnNuevaRecomendacion"
+                        class="btn btn-principal"
+                    >
+                        ➕ Registrar recomendación
+                    </button>
+
+                </section>
+
+
+            </div>
+
+
+
+            <!-- =========================
+                 INFORMACION DEL PLAN
+            ========================== -->
+
+            <section class="panel-info">
+
+                <span class="etiqueta">
+                    ⭐ ¿CÓMO PARTICIPAR?
+                </span>
+
+                <h2>
+                    Recomendá y sumá puntos
+                </h2>
+
+                <p>
+                    Registrá personas interesadas en conocer
+                    nuestras propuestas educativas. Tus
+                    recomendaciones podrán convertirse en
+                    puntos para participar por los premios
+                    del Plan Canje Educativo.
+                </p>
+
+
+                <div class="pasos-plan">
+
+
+                    <div>
+
+                        <span>
+                            1
+                        </span>
+
+                        <strong>
+                            Recomendá
+                        </strong>
+
+                        <small>
+                            Compartí la propuesta.
+                        </small>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            2
+                        </span>
+
+                        <strong>
+                            Registrá
+                        </strong>
+
+                        <small>
+                            Cargá los datos.
+                        </small>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            3
+                        </span>
+
+                        <strong>
+                            Sumá puntos
+                        </strong>
+
+                        <small>
+                            Aumentá tu participación.
+                        </small>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            4
+                        </span>
+
+                        <strong>
+                            Participá
+                        </strong>
+
+                        <small>
+                            Acercate a los premios.
+                        </small>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="contenedor">
+
+            <p>
+                © 2026 Educando Conciencia
+            </p>
+
+            <p>
+                Plan Canje Educativo
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>
+

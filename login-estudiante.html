@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ingresar | Portal de Estudiantes</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="pagina-acceso">
+
+    <!-- =========================
+         ENCABEZADO
+    ========================== -->
+
+    <header class="header">
+
+        <div class="contenedor nav">
+
+            <a href="index.html" class="logo">
+
+                <span>🎓</span>
+
+                <div>
+                    <strong>EDUCANDO CONCIENCIA</strong>
+                    <small>Plan Canje Educativo</small>
+                </div>
+
+            </a>
+
+            <a href="index.html" class="volver">
+                ← Volver al inicio
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         LOGIN
+    ========================== -->
+
+    <main class="acceso-main">
+
+        <div class="contenedor login-contenedor">
+
+
+            <section class="login-card">
+
+                <div class="login-icono">
+                    🎓
+                </div>
+
+                <div class="formulario-titulo">
+
+                    <span>
+                        PORTAL DE ESTUDIANTES
+                    </span>
+
+                    <h1>
+                        Bienvenido
+                    </h1>
+
+                    <p>
+                        Ingresá a tu cuenta para continuar
+                        con tu participación en el Plan Canje.
+                    </p>
+
+                </div>
+
+
+                <form id="loginForm">
+
+                    <!-- EMAIL -->
+
+                    <div class="campo">
+
+                        <label for="loginEmail">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            name="email"
+                            placeholder="ejemplo@email.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- CONTRASEÑA -->
+
+                    <div class="campo">
+
+                        <div class="label-password">
+
+                            <label for="loginPassword">
+                                Contraseña
+                            </label>
+
+                            <button
+                                type="button"
+                                id="mostrarPassword"
+                                class="mostrar-password"
+                            >
+                                Mostrar
+                            </button>
+
+                        </div>
+
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            name="password"
+                            placeholder="Ingresá tu contraseña"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- RECORDAR -->
+
+                    <div class="login-opciones">
+
+                        <label class="recordar">
+
+                            <input
+                                type="checkbox"
+                                id="recordar"
+                            >
+
+                            <span>
+                                Recordarme
+                            </span>
+
+                        </label>
+
+                        <a href="#" id="recuperarPassword">
+                            ¿Olvidaste tu contraseña?
+                        </a>
+
+                    </div>
+
+
+                    <!-- BOTON -->
+
+                    <button
+                        type="submit"
+                        class="btn btn-principal btn-form"
+                    >
+                        🔐 Ingresar al portal
+                    </button>
+
+
+                    <!-- MENSAJE -->
+
+                    <div
+                        id="mensajeLogin"
+                        class="mensaje-form"
+                        aria-live="polite"
+                    ></div>
+
+                </form>
+
+
+                <!-- REGISTRO -->
+
+                <div class="formulario-footer">
+
+                    <p>
+                        ¿Todavía no tenés una cuenta?
+                    </p>
+
+                    <a href="registro-estudiante.html">
+                        Crear cuenta →
+                    </a>
+
+                </div>
+
+
+                <!-- VOLVER -->
+
+                <div class="login-inicio">
+
+                    <a href="index.html">
+                        ← Volver al inicio
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- INFORMACION LATERAL -->
+
+            <section class="login-info">
+
+                <span class="etiqueta">
+                    ⭐ TU PARTICIPACIÓN
+                </span>
+
+                <h2>
+                    Cada recomendación
+                    puede acercarte a tu próximo premio.
+                </h2>
+
+                <p>
+                    Desde tu portal vas a poder registrar
+                    personas interesadas, consultar tus
+                    recomendaciones y conocer tus puntos.
+                </p>
+
+
+                <div class="login-beneficios">
+
+                    <div>
+                        <span>📋</span>
+
+                        <strong>
+                            Registrá recomendaciones
+                        </strong>
+                    </div>
+
+
+                    <div>
+                        <span>⭐</span>
+
+                        <strong>
+                            Consultá tus puntos
+                        </strong>
+                    </div>
+
+
+                    <div>
+                        <span>🎁</span>
+
+                        <strong>
+                            Conocé los premios
+                        </strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="contenedor">
+
+            <p>
+                © 2026 Educando Conciencia
+            </p>
+
+            <p>
+                Plan Canje Educativo
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

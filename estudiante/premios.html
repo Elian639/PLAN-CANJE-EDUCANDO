@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Premios | Plan Canje Educativo</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body class="pagina-panel">
+
+<!-- =========================
+     ENCABEZADO
+========================== -->
+
+<header class="header">
+
+    <div class="contenedor nav">
+
+        <a href="../index.html" class="logo">
+            <span>🎓</span>
+            <div>
+                <strong>EDUCANDO CONCIENCIA</strong>
+                <small>Plan Canje Educativo</small>
+            </div>
+        </a>
+
+        <a href="panel.html" class="volver">
+            ← Volver a mi panel
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     CONTENIDO
+========================== -->
+
+<main class="panel-main">
+
+    <div class="contenedor">
+
+        <div class="panel-header">
+
+            <div>
+                <h1>Premios disponibles</h1>
+
+                <p>
+                    Canjeá tus puntos por los premios disponibles
+                    del Plan Canje Educativo.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             MIS PUNTOS
+        ========================== -->
+
+        <section class="panel-estadisticas">
+
+            <div class="estadistica-card">
+
+                <span class="estadistica-icono">⭐</span>
+
+                <div>
+
+                    <small>TUS PUNTOS ACTUALES</small>
+
+                    <strong id="puntosActuales">0</strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CATALOGO DE PREMIOS
+        ========================== -->
+
+        <section class="panel-card">
+
+            <div class="panel-card-header">
+
+                <div>
+
+                    <span class="panel-card-icon">🎁</span>
+
+                    <h2>Catálogo de premios</h2>
+
+                </div>
+
+            </div>
+
+
+            <div id="catalogoPremios" class="premios-grid">
+
+
+                <!-- =========================
+                     GORRA
+                ========================== -->
+
+                <div class="premio" data-puntos="500">
+
+                    <div>🧢</div>
+
+                    <h3>Gorra de egresados</h3>
+
+                    <p>
+                        Canjeá tus puntos por tu gorra.
+                    </p>
+
+                    <p class="ayuda premio-requisito">
+                        Requiere 500 puntos
+                    </p>
+
+                    <div class="premio-estado"></div>
+
+                    <button
+                        type="button"
+                        class="btn btn-premio"
+                        data-premio="Gorra de egresados"
+                        data-puntos="500">
+                        Solicitar canje
+                    </button>
+
+                </div>
+
+
+                <!-- =========================
+                     CENA
+                ========================== -->
+
+                <div class="premio" data-puntos="1500">
+
+                    <div>🍽️</div>
+
+                    <h3>Cena de egresados</h3>
+
+                    <p>
+                        Sumá puntos y acercate a tu objetivo.
+                    </p>
+
+                    <p class="ayuda premio-requisito">
+                        Requiere 1500 puntos
+                    </p>
+
+                    <div class="premio-estado"></div>
+
+                    <button
+                        type="button"
+                        class="btn btn-premio"
+                        data-premio="Cena de egresados"
+                        data-puntos="1500">
+                        Solicitar canje
+                    </button>
+
+                </div>
+
+
+                <!-- =========================
+                     EFECTIVO
+                ========================== -->
+
+                <div class="premio" data-puntos="3000">
+
+                    <div>💰</div>
+
+                    <h3>Premio en efectivo</h3>
+
+                    <p>
+                        Podrás acceder según las condiciones
+                        del programa.
+                    </p>
+
+                    <p class="ayuda premio-requisito">
+                        Requiere 3000 puntos
+                    </p>
+
+                    <div class="premio-estado"></div>
+
+                    <button
+                        type="button"
+                        class="btn btn-premio"
+                        data-premio="Premio en efectivo"
+                        data-puntos="3000">
+                        Solicitar canje
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             HISTORIAL DE CANJES
+        ========================== -->
+
+        <section class="panel-card">
+
+            <div class="panel-card-header">
+
+                <div>
+
+                    <span class="panel-card-icon">📋</span>
+
+                    <h2>Mis solicitudes de canje</h2>
+
+                </div>
+
+            </div>
+
+
+            <div id="historialCanjesPremios">
+
+                <div class="sin-recomendaciones">
+
+                    <span>🎁</span>
+
+                    <p>
+                        Todavía no tenés solicitudes de canje.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INFORMACION
+        ========================== -->
+
+        <section class="panel-info">
+
+            <span class="etiqueta">🎁 SOBRE LOS PREMIOS</span>
+
+            <h2>¿Cómo funciona el canje?</h2>
+
+            <p>
+                Cuando tengas los puntos necesarios,
+                podés solicitar el premio que quieras.
+                La solicitud será revisada por el equipo
+                de Educando Conciencia.
+            </p>
+
+            <p>
+                <strong>Importante:</strong> tus puntos no se
+                descuentan al momento de solicitar el canje.
+                Se descuentan únicamente cuando la solicitud
+                sea aprobada.
+            </p>
+
+            <p>
+                Los premios disponibles y los puntos requeridos
+                pueden actualizarse durante el programa.
+                Cualquier cambio será comunicado a través
+                de tu portal.
+            </p>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer class="footer">
+
+    <div class="contenedor">
+
+        <p>© 2026 Educando Conciencia</p>
+
+        <p>Plan Canje Educativo</p>
+
+    </div>
+
+</footer>
+
+
+<script src="../js/app.js"></script>
+
+</body>
+</html>

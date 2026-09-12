@@ -783,3 +783,32 @@
         transition-duration: .001ms !important;
     }
 }
+
+
+/* =========================
+   LOGOS REDES SOCIALES
+========================= */
+
+.footer-redes-enlaces {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.red-social {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.red-social img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: block;
+}
+
+.red-social span {
+    font-size: 15px;
+}

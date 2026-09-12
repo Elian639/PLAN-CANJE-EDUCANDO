@@ -111,9 +111,17 @@
                     <div class="campo">
                         <label for="interes">¿La persona donó o compró?</label>
                         <select id="interes" name="interes" required>
-                            <option value="" disabled selected>Seleccioná una opción</option>
-                            <option value="Donación de libros">📚 Donación de libros (1 punto)</option>
-                            <option value="Compra de productos">🛒 Compra de productos (10 puntos)</option>
+                            <option value="Donación de libros">
+    📚 Donación de libros (+1 punto de donación)
+</option>
+
+<option value="Compra de productos">
+    🛒 Compra de productos (+10 puntos de compra)
+</option>
+
+<option value="Compra y donación">
+    🛒📚 Compra + donación (+10 puntos de compra + 1 punto de donación)
+</option>
                         </select>
                     </div>
 
@@ -153,6 +161,7 @@
         </div>
     </footer>
 
+    <script src="../js/config.js"></script>
     <script src="../js/app.js"></script>
 
 </body>

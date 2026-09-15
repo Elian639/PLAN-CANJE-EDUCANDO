@@ -167,7 +167,7 @@ function studentPublic(row, recommendations = [], redemptions = []) {
         puntosDonacion,
         puntosDisponibles: Math.max(0, puntosTotales - comprometidos),
         puntosComprometidos: comprometidos,
-        recomendaciones,
+        recomendaciones: recommendations,
         canjes: redemptions,
         fechaRegistro: row.created_at,
     };
